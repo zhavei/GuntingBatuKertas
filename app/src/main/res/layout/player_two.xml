@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextAppearance.Material3.HeadlineMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="@string/pemain2"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/player_two_batu"
+        app:layout_constraintStart_toStartOf="@+id/player_two_batu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:id="@+id/player_two_batu"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_rock"
+        app:layout_constraintDimensionRatio="5:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:id="@+id/player_two_kertas"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_paper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_two_batu" />
+
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:id="@+id/player_two_gunting"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_scissor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_two_kertas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

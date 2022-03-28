@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">GuntingBatuKertas</string>
+    <string name="player_one">Pemain 1</string>
+    <string name="pemain2">COM</string>
+    <string name="pemain2menang">COM menang</string>
+    <string name="drawplay">Seri</string>
+    <string name="playeronewin">Kamu Menang</string>
+
 </resources>
