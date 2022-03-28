@@ -31,11 +31,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun reset() {
+        binding.ivreset.setImageResource(R.drawable.ic_refresh)
         setBgUserSelection(-1)
         setBgComSelection(-1)
         playerOneSelect = null
         playerTwoSelect = null
-        binding.ivreset.setImageResource(R.drawable.ic_refresh)
     }
 
     private fun letsPlay() {
@@ -145,20 +145,17 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun gameStart(playerOneSelected: Int, playerTwoSelected: Int) {
-        if (playerOneSelected != null) {
-            if ((playerOneSelected.plus(1)).mod(3) == playerTwoSelected) {
-                Log.d(TAG, "Computer won")
-                binding.tvResultCenter.setText("Computer WON")
+        if ((playerOneSelected.plus(1)).mod(3) == playerTwoSelected) {
+            Log.d(TAG, "Computer won")
+            binding.tvResultCenter.setText("Computer WON")
 
-            } else if (playerOneSelected.equals(playerTwoSelected)) {
-                Log.d(TAG, " draw")
-                binding.tvResultCenter.setText("draw")
+        } else if (playerOneSelected.equals(playerTwoSelected)) {
+            Log.d(TAG, " draw")
+            binding.tvResultCenter.setText("draw")
 
-            } else {
-                Log.d(TAG, "User won")
-                binding.tvResultCenter.setText("YOU WIN!!")
-
-            }
+        } else {
+            Log.d(TAG, "User won")
+            binding.tvResultCenter.setText("YOU WIN!!")
 
         }
     }
